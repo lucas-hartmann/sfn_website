@@ -72,6 +72,37 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Hover Image Footer */
+
+.image-container {
+	position: relative;
+  }
+  
+  .image-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	opacity: 0;
+	transition: opacity 0.5s ease;
+  }
+  
+  .col-6:hover .image-overlay {
+	opacity: 1;
+  }
+  
+  .image-overlay p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 24px;
+	text-align: center;
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2896,7 +2927,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.025);
+			background-color: rgba(255, 255, 255, 0.5);
 		}
 
 		input[type="submit"]:active,
@@ -2904,7 +2935,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: rgba(255, 255, 255, 0.5);
 		}
 
 		input[type="submit"].icon:before,
@@ -2921,7 +2952,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #4c5c96;
+			background-color: rgba(255, 255, 255, 0.5);
 			box-shadow: none;
 		}
 
@@ -2930,7 +2961,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #53639e;
+				background-color: rgba(255, 255, 255, 0.5);
 			}
 
 			input[type="submit"].primary:active,
@@ -2938,7 +2969,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #45558d;
+				background-color: rgba(255, 255, 255, 0.5);
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -2946,7 +2977,7 @@ input, select, textarea {
 			input[type="button"].primary.icon:before,
 			button.primary.icon:before,
 			.button.primary.icon:before {
-				color: #7985b0;
+				color: rgba(255, 255, 255, 0.5);
 			}
 
 		input[type="submit"].fit,
@@ -3165,11 +3196,11 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:hover {
-						background-color: rgba(255, 255, 255, 0.025);
+						background-color: rgba(255, 255, 255, 0.5);
 					}
 
 					#header nav a[href="#menu"]:active {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgb(255, 255, 255, 0.5);
 					}
 
 		#header.alt {
@@ -3345,7 +3376,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #45558d;
+						background: rgba(255, 255, 255, 0.5);
 					}
 
 		@media screen and (max-width: 736px) {
